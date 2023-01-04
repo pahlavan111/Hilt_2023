@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         package="com.bp.hilt">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-            android:name="com.bp.application.App"
+            android:name="com.bp.main.application.App"
             android:allowBackup="true"
             android:dataExtractionRules="@xml/data_extraction_rules"
             android:fullBackupContent="@xml/backup_rules"
@@ -15,14 +16,14 @@
             android:theme="@style/Theme.Hilt"
             tools:targetApi="31">
         <activity
-                android:name=".ModuleActivity"
+                android:name="com.bp.main.hilt.ModuleActivity"
                 android:exported="false" >
 
         </activity>
 
 
         <activity
-                android:name=".MainActivity"
+                android:name="com.bp.main.activity.MainActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

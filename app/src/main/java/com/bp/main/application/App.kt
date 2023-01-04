@@ -1,4 +1,4 @@
-package com.bp.application
+package com.bp.main.application
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
