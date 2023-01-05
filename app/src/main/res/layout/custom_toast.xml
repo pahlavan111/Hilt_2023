@@ -14,8 +14,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         android:textSize="14sp"
-        android:fontFamily="@font/iran_yekan_mobile_bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/black"
         android:background="@drawable/toast_text_style"
         android:layout_height="wrap_content"
         tools:text="TextView" />
