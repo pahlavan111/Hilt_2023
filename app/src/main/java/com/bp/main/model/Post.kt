@@ -1,8 +1,8 @@
 package com.bp.main.model
 
 data class Post(
-    val body: String,
     val id: Int,
+    val userId: Int,
     val title: String,
-    val userId: Int
+    val body: String
 )
