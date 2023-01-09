@@ -6,13 +6,20 @@
         android:layout_height="match_parent"
         tools:context="com.bp.main.activity.MainActivity">
 
+    <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/fire"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <Button
             android:id="@+id/fire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="fire"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
