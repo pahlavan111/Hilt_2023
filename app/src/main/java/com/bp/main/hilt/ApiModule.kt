@@ -11,11 +11,11 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object AppModule {
+object ApiModule {
     private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
-    @Singleton
     @Provides
+    @Singleton
     fun provideApiCall(): WebService {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
